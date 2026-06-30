@@ -1,0 +1,18 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main(){
+    class Solution {
+    public:
+    int singleNumber(vector<int>& nums) {
+        int res = 0;
+        int n = nums.size();
+        for(int i = 0; i<n; i++){
+            res = res^nums[i];
+        }
+        return res;
+        
+    }
+};
+}
